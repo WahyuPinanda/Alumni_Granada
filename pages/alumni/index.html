@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alumni - Home Page</title>
+
+    <!-- CSS Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+          crossorigin="anonymous" />
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0-alpha3/css/bootstrap.min.css" />
+    <link rel="stylesheet" 
+          href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" 
+          href="https://cdn.datatables.net/responsive/2.4.1/css/responsive.bootstrap5.min.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/Alumni_Granada/assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">AlumniGranada</a>
+        <button class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNavDropdown" 
+                aria-controls="navbarNavDropdown" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Alumni_Granada/pages/about/index.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" 
+                 href="#" 
+                 id="navbarDropdownMenuLink" 
+                 role="button" 
+                 data-bs-toggle="dropdown" 
+                 aria-expanded="false">
+                Others
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="/Alumni_Granada/pages/gallery/index.html">Gallery</a>
+                </li>
+                <li>
+                  <a class="dropdown-item active" href="/Alumni_Granada/pages/alumni/index.html">Alumni</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/Alumni_Granada/pages/contact/index.html">Contact</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Alumni Table Section -->
+    <div class="container p-3 my-5 bg-light border border-primary">
+      <table id="example" class="table table-striped nowrap" style="width: 100%">
+        <thead>
+          <tr>
+            <th>Nama</th>
+            <th>NISN</th>
+            <th>Angkatan</th>
+            <th>Lulusan</th>
+            <th>Universitas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Start of 2016 -->
+          <tr>
+            <td>Akhmad Luthfi Aziz</td>
+            <td>0002739434</td>
+            <td>Marvelous</td>
+            <td>2016 - 2019</td>
+            <td></td>
+          </tr>
+          <!-- Add more alumni data here -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.4.1/js/responsive.bootstrap5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+            crossorigin="anonymous"></script>
+    
+    <!-- Custom JS -->
+    <script src="/Alumni_Granada/assets/js/main.js"></script>
+  </body>
+</html>
