@@ -1,0 +1,254 @@
+/* Base Styles & Typography */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #212529;
+}
+
+/* Layout Components */
+.container .heading {
+  width: 85%;
+  margin: auto;
+  text-align: center;
+}
+
+.container .heading h1 {
+  color: #0eb844;
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+/* About Page Styles */
+.wrapper {
+  width: 85%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  width: 50%;
+  margin: 0px 25px;
+  transition: 0.4s ease;
+}
+
+.text {
+  text-align: justify;
+}
+
+.content:hover {
+  transform: translateY(-10px);
+}
+
+.content h2 {
+  font-size: 30px;
+  color: rgb(18, 83, 188);
+}
+
+.content p {
+  color: rgb(255, 249, 249);
+  font-size: 19px;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.image {
+  width: 50%;
+  transition: 0.4s ease;
+}
+
+.image:hover {
+  transform: translateY(-10px);
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Contact Page Styles */
+.container-section {
+  background-color: #212529;
+  height: 50vh !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.row {
+  background-color: white;
+  margin-top: -250px !important;
+}
+
+.bi {
+  font-size: 60px !important;
+}
+
+.bi:hover {
+  color: #fc052e !important;
+  cursor: pointer !important;
+}
+
+.contact-details {
+  font-size: 25px !important;
+  font-weight: 600 !important;
+}
+
+.form-control {
+  height: 46px;
+  width: 80% !important;
+  background: #fff;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  border-radius: 2px;
+  box-shadow: none !important;
+  border: none;
+  border-bottom: 1px solid #fc052e;
+  padding: 0;
+}
+
+.btn-primary {
+  background-color: #fc052e !important;
+  border: #fc052e !important;
+}
+
+/* Gallery Page Styles */
+.gallery {
+  background-color: #212529;
+  padding: 80px 0;
+}
+
+.gallery img {
+  background-color: #ffffff;
+  padding: 15px;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.02);
+}
+
+#gallery-modal .modal-img {
+  width: 100%;
+}
+
+/* Star Animation Styles */
+#stars {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  animation: animStar 50s linear infinite;
+  box-shadow: 779px 1331px #fff, 324px 42px #fff, 303px 586px #fff,
+    1312px 276px #fff, 451px 625px #fff, 521px 1931px #fff, 1087px 1871px #fff,
+    36px 1546px #fff, 132px 934px #fff, 1698px 901px #fff, 1418px 664px #fff,
+    1448px 1157px #fff, 1084px 232px #fff, 347px 1776px #fff, 1722px 243px #fff,
+    1629px 835px #fff, 479px 969px #fff, 1231px 960px #fff, 586px 384px #fff;
+}
+
+#stars2 {
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  animation: animStar 100s linear infinite;
+  box-shadow: 1448px 320px #fff, 1775px 1663px #fff, 332px 1364px #fff,
+    878px 340px #fff, 569px 1832px #fff, 1422px 1684px #fff, 1946px 1907px #fff,
+    121px 979px #fff, 1044px 1069px #fff, 463px 381px #fff, 423px 112px #fff,
+    523px 1179px #fff, 779px 654px #fff;
+}
+
+#stars3 {
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  animation: animStar 150s linear infinite;
+  box-shadow: 387px 1878px #fff, 760px 1564px #fff, 1487px 999px #fff,
+    948px 1828px #fff, 1977px 1001px #fff, 1284px 1963px #fff, 656px 284px #fff,
+    1268px 1635px #fff, 1820px 598px #fff, 642px 1900px #fff, 296px 57px #fff;
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}
+
+/* Alumni Page Styles */
+.table {
+  background-color: white;
+  margin: 20px 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.dataTables_wrapper {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  /* About Page */
+  .wrapper {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  
+  .container .heading h1 {
+    font-size: 40px;
+  }
+  
+  .content,
+  .image {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .content h2 {
+    font-size: 25px;
+  }
+
+  /* Contact Page */
+  .form-control {
+    width: 100% !important;
+  }
+  
+  .row > * {
+    padding-left: 0 !important;
+  }
+
+  /* Gallery Page */
+  .gallery {
+    padding: 40px 0;
+  }
+}
+
+/* Utility Classes */
+.text-primary {
+  color: #0eb844 !important;
+}
+
+.bg-dark {
+  background-color: #212529 !important;
+}
+
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.transition {
+  transition: all 0.3s ease;
+}
